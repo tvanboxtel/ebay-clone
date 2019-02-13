@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import store from './store'
 import {Provider} from 'react-redux'
+import Advertisements from './components/Advertisements'
 
 // do I need this when I use database routing? I think yes?
 // import Routes from './Routes'
@@ -11,11 +12,8 @@ class App extends Component {
     return (
       <Provider store={store}>
       {/* //Routes goes here */}
-       <div className="App">
-        <header className="App-header">
-          Welcome to FreeBay, an open source alternative to eBay!
-        </header>
-      </div>
+      <Advertisements />
+
       </Provider>
       
      
