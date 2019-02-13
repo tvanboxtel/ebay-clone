@@ -34,6 +34,6 @@
 - PUT should change the detail page for the single advertisement you posted?
     PUT localhost:4000/advertisement/:id
 
-#Database integration
+# Database integration
 
 - in the actions do request to localhost:4000
