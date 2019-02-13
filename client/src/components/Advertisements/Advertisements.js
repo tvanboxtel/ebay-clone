@@ -11,8 +11,9 @@ class Advertisements extends React.Component {
   }
 
   render() {
-    // console.log('My props are:', this.props.advertisements)
     const ads = this.props.advertisements
+    if (ads) console.log('My props are:', this.props.advertisements)
+
     return (
       <div className="App">
         <header className="App-header">
