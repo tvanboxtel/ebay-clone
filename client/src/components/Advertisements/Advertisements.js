@@ -1,18 +1,20 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class Advertisements extends React.Component {
 
   renderAds(ad) {
-    //can implement Link logic here
-    return <li key={ad.id}>{ad.title}, {ad.price}
+    return <li key={ad.id}>
+      <Link to={`advertisements/${ad.id}`}>
+        {ad.title}, {ad.price}
+      </Link>
     </li>
 
   }
 
   render() {
     const ads = this.props.advertisements
-    if (ads) console.log('My props are:', this.props.advertisements)
+    // if (ads) console.log('My props are:', this.props.advertisements)
 
     return (
       <div className="App">
