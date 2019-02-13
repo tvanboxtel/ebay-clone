@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 
 
 class AdvertisementContainer extends React.Component {
-    // all kinds of extra stuff
     componentDidMount() {
         this.props.loadAdvertisements()
     }
