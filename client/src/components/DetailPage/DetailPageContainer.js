@@ -13,7 +13,6 @@ class DetailPageContainer extends React.Component {
 
 
     render() {
-        console.log(this.props.advertisement)
         return (
          <DetailPage 
          advertisement={this.props.advertisement}

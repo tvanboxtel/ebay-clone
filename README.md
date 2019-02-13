@@ -20,7 +20,8 @@
 
 -  X title, price, ad id
 
-- detail page: description, picture(url), price, email address, phone number
+- X*detail page: description, picture(url), price, email address, phone number
+* Page exists, could hypothetically display the details if there were any in the database
 
 
 # Routing and endpoints
