@@ -23,3 +23,6 @@ const mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps, { loadAdvertisements })(AdvertisementContainer)
+
+
+//this file used to be called index.js
