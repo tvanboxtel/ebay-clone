@@ -1,4 +1,4 @@
-import { Body, JsonController, Get, Param, Post, HttpCode,  } from 'routing-controllers'
+import { Body, JsonController, Get, Param, Post, HttpCode, } from 'routing-controllers'
 // , Put , NotFoundError,
 import Advertisement from '../advertisements/entity'
 
@@ -18,7 +18,7 @@ export default class AdvertisementController {
     @Get('/advertisements/:id')
     getAdvertisement(
         @Param('id') id: number
-    ){
+    ) {
         return Advertisement.findOne(id)
     }
 
@@ -27,11 +27,11 @@ export default class AdvertisementController {
     @HttpCode(201)
     createAdvertisement(
         @Body() advertisement: Advertisement
-    ){
+    ) {
         return advertisement.save()
     }
 
-    
+
     // @Put('/advertisements/:id')
     // async updateAdvertisement(
     //     @Param('id') id: number,
@@ -42,6 +42,6 @@ export default class AdvertisementController {
     // }
 
 
-        
-    
+
+
 }
