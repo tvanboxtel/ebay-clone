@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default (props) => {
-    console.log('Hello!', props)
+    console.log('My props are:', props)
     return (
         <div className="App">
         <header className="App-header">

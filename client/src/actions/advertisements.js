@@ -10,7 +10,7 @@ const advertisementsFetched = advertisements => ({
 })
 
 export const loadAdvertisements = () => (dispatch, getState) => {
-    if (getState().advertisements) return
+    if (getState().advertisements) return console.log('nope')
 
     request(`${baseUrl}/advertisements`)
     .then(response => {
