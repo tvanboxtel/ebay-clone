@@ -1,4 +1,6 @@
 import React from 'react'
+import DetailPage from './DetailPage'
+
 //more imports
 
 class DetailPageContainer extends React.Component {
@@ -6,9 +8,7 @@ class DetailPageContainer extends React.Component {
 
     render() {
         return (
-            <div>
-                Hi!
-            </div>
+         <DetailPage />
         )
     }
 }
