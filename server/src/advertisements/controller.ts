@@ -12,7 +12,7 @@ export default class AdvertisementController {
     @Get('/advertisements')
     async getAllAdvertisements() {
         const advertisements = await Advertisement.find()
-        return {advertisements}
+        return advertisements
     }
 
     @Get('/advertisements/:id')

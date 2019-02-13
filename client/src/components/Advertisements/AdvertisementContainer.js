@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 
 
 class AdvertisementContainer extends React.Component {
-    // all kinds of extra stuff
     componentDidMount() {
         this.props.loadAdvertisements()
     }
@@ -23,3 +22,6 @@ const mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps, { loadAdvertisements })(AdvertisementContainer)
+
+
+//this file used to be called index.js
