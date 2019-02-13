@@ -1,6 +1,7 @@
 import React from 'react'
 import Advertisements from './Advertisements'
 import { loadAdvertisements } from '../../actions/advertisements'
+import CreateAdvertisement from '../CreateAdvertisement/CreateAdvertisementContainer'
 import { connect } from 'react-redux'
 
 
@@ -11,7 +12,13 @@ class AdvertisementContainer extends React.Component {
 
 
     render() {
-        return <Advertisements advertisements={this.props.advertisements} />
+        return (
+            <div>
+                <Advertisements advertisements={this.props.advertisements} />
+                <CreateAdvertisement />
+            </div>
+        )
+
     }
 }
 
